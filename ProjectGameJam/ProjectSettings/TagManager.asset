@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Sprite
   - Enemy
+  - Shield
+  - coin
+  - COIN
   layers:
   - Default
   - TransparentFX

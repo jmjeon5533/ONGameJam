@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class SmallCoin : MonoBehaviour
 {
-
+    GameManager GM;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GM = GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -18,9 +18,10 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (GameManager.IsItem == false && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("ÃÄ¸ÂÀ½");
+            GameManager.Count = GameManager.Count + GameManager.SmallCoin;
+            Destroy(gameObject);
         }
     }
 }

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class BigCoin : MonoBehaviour
 {
-          
+    GameManager GM;
     void Start()
     {
-        
+        GM = GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -19,9 +19,8 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.IsItemSprite = true;
-            Destroy(this.gameObject);
+            GameManager.Count = GameManager.Count + GameManager.BigCoin;
+            Destroy(gameObject);
         }
     }
-    
 }
