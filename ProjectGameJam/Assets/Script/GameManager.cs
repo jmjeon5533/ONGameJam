@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static bool IsItemSprite = false;
     public static bool IsItem = false;
     public GameObject P;
+    public static float MoveSpeed = 5;
     void Start()
     {
         
