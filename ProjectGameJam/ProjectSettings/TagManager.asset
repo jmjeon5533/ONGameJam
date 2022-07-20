@@ -10,6 +10,7 @@ TagManager:
   - Shield
   - coin
   - COIN
+  - SummonLine
   layers:
   - Default
   - TransparentFX

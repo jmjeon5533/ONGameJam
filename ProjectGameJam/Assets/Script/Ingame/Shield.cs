@@ -18,7 +18,7 @@ public class Shield : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) //닿은게 플레이어라면
         {
-            GameManager.IsItemShield = true; //포장지 아이템을 얻고
+            GameManager.Instance.IsItemShield = true; //포장지 아이템을 얻고
             Destroy(this.gameObject); //아이템을 먹음(부숨)
         }
     }

@@ -14,13 +14,13 @@ public class GroundMove : MonoBehaviour
     {
         if (gameObject.transform.position.x <= -40) // x°¡ -40À» ³Ñ¾î°¡¸é
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //ÆÄ±«
         }
 
     }
     private void FixedUpdate()
     {
-        
-        transform.Translate(-GameManager.MoveSpeed/50, 0, 0); //ÇÃ·§Æû ¼Óµµ·Î ¹«ºù¸Ç
+        transform.Translate(-GameManager.Instance.MoveSpeed/50, 0, 0);
+         //ÀÌµ¿¼Óµµ·Î ¹«ºù¸Ç
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Title : MonoBehaviour
+public class StoryScene2 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,11 +15,9 @@ public class Title : MonoBehaviour
     void Update()
     {
 
-
-
     }
     public void ClickSwap()
     {
-        SceneManager.LoadScene("StoryScene 1");
+        SceneManager.LoadScene("StoryScene 3");
     }
 }
